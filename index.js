@@ -79,12 +79,27 @@ function sum(a, b, c) {
 sum(1, 2); // NaN
 sum(1, 2, 3); // 6
 
-// return statement
+// return statement be very particular about the return statement where you place it in the function
 
 function sum(a, b, c) {
-  return a + b + c;
+  // the function is defined
+  return a + b + c; // the value of the function is returned to the caller of the function
 }
 
-const totalSum = sum(1, 2, 3);
+const totalSum = sum(1, 2, 3); // the value of the function is stored in the variable totalSum
 
-console.log(totalSum);
+console.log(totalSum); // the value of the variable totalSum is printed to the console // 6
+
+// create a function is purle take in color as input
+// if the color is purple return true else return false
+
+function ispurple(color) {
+  // the function is defined
+  if (color.toLowerCase() === "purple") {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(ispurple("purple")); // true
