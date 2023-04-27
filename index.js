@@ -96,10 +96,58 @@ console.log(totalSum); // the value of the variable totalSum is printed to the c
 function ispurple(color) {
   // the function is defined
   if (color.toLowerCase() === "purple") {
-    return true;
+    // this is an if statement that checks if the color is purple
+    return true; // if the color is purple the function returns true
   } else {
-    return false;
-  }
+    // if the color is not purple
+    return false; // the function returns false
+  } // the function ends
 }
 
 console.log(ispurple("purple")); // true
+
+// another way to write the same function
+
+function ispurple(color) {
+  // this is a function declaration
+  return color.toLowerCase() === "purple"; // this is a return statement
+}
+
+const isPurple = (color) => {
+  // this is an arrow function it is a function expression that
+  return color.toLowerCase() === "purple"; // this is a return statement
+};
+console.log(isPurple("purple")); // true
+
+function divideby2(num) {
+  return num / 2;
+}
+
+const divideby2 = (num) => {
+  return num / 2;
+};
+
+const divideby2 = (num) => num / 2;
+
+console.log(divideby2(4)); // 2
+
+// create a function keyword and defie a function named rectangleArea
+// the function should take in two arguments length and width
+// after the curly braces console.log the area by multiplying length and width
+// invoke the function by calling its name alongside the element
+
+function rectangleArea(length, height) {
+  console.log(length * height);
+}
+
+// triangle height
+
+function triangleArea(base, height) {
+  console.log((base * height) / 2);
+}
+
+//also you cam use return statement
+
+const triangleArea = (base, height) => {
+  return (base * height) / 2;
+};
